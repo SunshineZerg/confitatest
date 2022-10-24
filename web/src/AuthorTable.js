@@ -18,7 +18,7 @@ import {Button, Col, Input, Row, Switch, Table, Tooltip} from "antd";
 import * as Setting from "./Setting";
 import i18next from "i18next";
 
-class AuthorTable extends React.Component {
+class AuthorTable extends React.Component  {
   constructor(props) {
     super(props);
     this.state = {
