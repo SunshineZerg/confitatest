@@ -1,0 +1,12 @@
+name: eslint in pull request
+on: pull_request
+jobs:
+  eslint:
+    name: Check the source code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install packages
+        run: yarn ci
+      - name: Lint
+        run: yarn lint
